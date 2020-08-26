@@ -1,0 +1,61 @@
+Given a set of keywords words and a string S, make all appearances of all keywords in S bold. Any letters between <b> and </b> tags become bold.
+The returned string should use the least number of tags possible, and of course the tags should form a valid combination.
+For example, given that words = ["ab", "bc"] and S = "aabcd", we should return "a<b>abc</b>d". Note that returning "a<b>a<b>b</b>c</b>d" would use more tags, so it is incorrect.
+
+Note:
+words has length in range [0, 50].
+words[i] has length in range [1, 10].
+S has length in range [0, 500].
+All characters in words[i] and S are lowercase letters.
+
+Input Description:
+First line contains, N and S. (1<N<100)
+Second line contains, N elements of strings in array.
+
+Output Description:
+Print the string after adding bold tag.
+
+Sample Input:
+2 aabcd
+ab bc
+
+Sample Output:
+a<b>abc</b>d
+
+Explanation:
+The string "abc" is added bold in the output string.
+
+Sample Input:
+3 abcdg
+a cdg
+
+Sample Output:
+<b>a</b>b<b>cdg</b>
+
+Sample Input:
+4 guviii
+i gu guvi uvi
+
+Sample Output:
+<b>guviii</b>
+
+Sample Input:
+2 hello
+he llo
+
+Sample Output:
+<b>hello</b>
+
+Sample Input:
+3 poiu
+gh yu po
+
+Sample Output:
+<b>po</b>iu
+
+Sample Input:
+4 qwerty
+asd qw y ui
+
+Sample Output:
+<b>qw</b>ert<b>y</b>
